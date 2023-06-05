@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image:url(./bg.jpg);
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        background-attachment:fixed;
+    }
+    h5{
+        font-size: 70px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 300;
+        text-align: center;
+        color: #fff;
+    }
+    .card-container{
+        margin: 30px;
+    }
+    .card-row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-image{
+    position: relative;
+    flex: 1;
+    max-width: 480px;
+    height: 360px;
+    margin: 20px;
+    overflow: hidden;
+
+
+}
+.card-image img{
+    opacity: 0.8;
+    position: relative;
+    vertical-align: top;
+    transition: 0.6s;
+    transition-property: opacity;
+
+}
+.card-image :hover img{
+    opacity: 1;
+}
+.card-image .card-details{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+.card-image .card-details h2{
+color: #000;
+text-align: center;
+font-size: 35px;
+text-transform: uppercase;
+font-weight: 300;
+margin-top: 70px;
+transition: 0.4s;
+transition-property: transform;
+text-decoration: none;
+} 
+.card-image .card-details h2 span{
+    font-weight: 900;
+}
+
+.card-image:hover .card-details h2{
+    transform: translateY( -30px);
+}
+.card-image .card-details p{
+    color: black;
+    margin: 30px 30px 0 30px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0;
+    transition: 0.6s;
+    transition-property: opacity,transform;
+
+}
+.card-image:hover .card-details p{
+    opacity: 1;
+    transform: translateY(-40px);
+   
+}
+.card-more {
+    
+    position: absolute;
+    background: rgba(255,255,255,0.8);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    bottom: -60px;
+    transition: 0.6s;
+
+}
+.card-image .card-more{
+    bottom: 0;
+
+}
+.card-more .new-page{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+.card-more .new-page span{
+    font-weight: 900;
+
+}
+
+@media (max-width:1080px){
+    .card-image{
+        flex: 100%;
+        max-width: 480px;
+
+
+    }
+}
+@media (max-width:400px){
+    .card-image .card-details p{
+        font-size: 16px;
+    }
+    .card-more .new-page a i{
+        font-size: 18px;
+
+    }
+}
+</style>
+<body>
+    <h5>Select the details you want to know about</h5>
+    <div class="card-container">
+
+        <div class="card-row">
+          <div class="card-image">
+            <img src="./food.jpg" alt="">
+            <div class="card-details">
+              <h2><span>FOOD</span></h2>
+              <p>Know about some of the best foods available in your destination</p>
+              
+    
+            </div>
+    
+          </div>
+          
+          <div class="card-image">
+            <img src="./festival.jpg" alt="">
+            <div class="card-details">
+              <h2><span>FESTIVALs</span></h2>
+              <p>Know about the festivals being celebrated there</p>
+             
+    
+            </div>
+    
+          </div>
+          
+        
+          
+          
+        </div>
+        <div class="card-row">
+            <div class="card-image">
+              <img src="./routes.jpg" alt="">
+              <div class="card-details">
+                <h2><span>ROUTES</span></h2>
+                <p>Know the best routes for your destination</p>
+                
+      
+              </div>
+      
+            </div>
+            
+            <div class="card-image">
+              <img src="./places.jpg" alt="">
+              <div class="card-details">
+                <h2><span> PLACES</span></h2>
+                <p>Find the best places and select your trip</p>
+                
+      
+              </div>
+      
+            </div>
+            
+          
+            
+            
+          </div>
+          
+            
+          
+            
+            
+          </div>
+          
+            
+          
+            
+          
+            
+            
+          </div>
+      </div>
+
+    </div>
+</body>
+</html>

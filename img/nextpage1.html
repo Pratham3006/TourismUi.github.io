@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background: #2F3238;
+    }
+    .card-container{
+        margin: 30px;
+    }
+    
+
+.card-row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-image{
+    position: relative;
+    flex: 1;
+    max-width: 480px;
+    height: 360px;
+    margin: 20px;
+    overflow: hidden;
+
+
+}
+.card-image img{
+    opacity: 0.8;
+    position: relative;
+    vertical-align: top;
+    transition: 0.6s;
+    transition-property: opacity;
+
+}
+.card-image :hover img{
+    opacity: 1;
+}
+.card-image .card-details{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+.card-image .card-details h2{
+text-align: center;
+font-size: 35px;
+text-transform: uppercase;
+font-weight: 300;
+margin-top: 70px;
+transition: 0.4s;
+transition-property: transform;
+text-decoration: none;
+} 
+.card-image .card-details h2 span{
+    font-weight: 900;
+}
+
+.card-image:hover .card-details h2{
+    transform: translateY( -30px);
+}
+.card-image .card-details p{
+    margin: 30px 30px 0 30px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0;
+    transition: 0.6s;
+    transition-property: opacity,transform;
+
+}
+.card-image:hover .card-details p{
+    opacity: 1;
+    transform: translateY(-40px);
+   
+}
+.card-more {
+    
+    position: absolute;
+    background: rgba(255,255,255,0.8);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    bottom: -60px;
+    transition: 0.6s;
+
+}
+.card-image .card-more{
+    bottom: 0;
+
+}
+.card-more .new-page{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+.card-more .new-page span{
+    font-weight: 900;
+
+}
+
+@media (max-width:1080px){
+    .card-image{
+        flex: 100%;
+        max-width: 480px;
+
+
+    }
+}
+@media (max-width:400px){
+    .card-image .card-details p{
+        font-size: 16px;
+    }
+    .card-more .new-page a i{
+        font-size: 18px;
+
+    }
+}
+
+</style>
+<body>
+    <h5>Maharastra food</h5>
+    <div class="card-container">
+        <div class="card-row">
+          <div class="card-image">
+            <img src="./goa.jpg" alt="">
+            <div class="card-details">
+              <h2>Tropical & Vibrant<span> Goa</span></h2>
+              <p>Goa is a paradisiacal coastal destination known for its pristine beaches, vibrant nightlife, and rich Portuguese heritage.</p>
+              <div class="card-more">
+                <a href="#" class="new-page">Read <span>More</span></a>
+
+              </div>
+
+            </div>
+
+          </div>
+          <div class="card-image">
+            <img src="./Satara-1.jpg" alt="">
+            <div class="card-details">
+              <h2>Land of Ganesha<span> Maharastra</span></h2>
+              <p>Maharashtra is a diverse state in western India known for its bustling cosmopolitan cities, such as Mumbai</p>
+              <div class="card-more">
+                <a href="#" class="new-page">Read <span>More</span></a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        </div>
+  
+      <div class="card-container">
+
+        <div class="card-row">
+          <div class="card-image">
+            <img src="./kerala.jpg" alt="">
+            <div class="card-details">
+              <h2>Paradise on Earth<span> Kerala</span></h2>
+              <p>Kerala is known for its tranquil atmosphere.From its lush green landscapes to its serene backwaters </p>
+              <div class="card-more">
+                <a href="#" class="new-page">Read <span>More</span></a>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+          
+          <div class="card-image">
+            <img src="./rajsthan.jpg" alt="">
+            <div class="card-details">
+              <h2>Desert Land<span> Rajasthan</span></h2>
+              <p>Rajasthan is renowned for its majestic palaces, forts, and havelis that showcase the rich cultural heritage</p>
+              <div class="card-more">
+                <a href="#" class="new-page">Read <span>More</span></a>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+          
+        
+          
+          
+        </div>
+        <div class="card-row">
+            <div class="card-image">
+              <img src="./tamiln.jpg" alt="">
+              <div class="card-details">
+                <h2>Dravidian Palace<span> Tamilnadu</span></h2>
+                <p>a land steeped in Dravidian heritage, captivates with its ancient temples and rich cultural traditions</p>
+                <div class="card-more">
+                  <a href="#" class="new-page">Read <span>More</span></a>
+      
+                </div>
+      
+              </div>
+      
+            </div>
+            
+            <div class="card-image">
+              <img src="./sikkim.jpg" alt="">
+              <div class="card-details">
+                <h2> Himalayan Paradise<span> Sikkim</span></h2>
+                <p>Nestled in the lap of the majestic Himalayas, Sikkim is a picturesque state blessed with breathtaking natural beauty</p>
+                <div class="card-more">
+                  <a href="#" class="new-page">Read <span>More</span></a>
+      
+                </div>
+      
+              </div>
+      
+            </div>
+            
+          
+            
+            
+          </div>
+          <div class="card-row">
+            <div class="card-image">
+              <img src="./meghalaya.jpg" alt="">
+              <div class="card-details">
+                <h2>Cloudy Enchantress<span> Meghalaya</span></h2>
+                <p>Meghalaya, known as the "abode of clouds," is a mesmerizing state in northeastern India </p>
+                <div class="card-more">
+                  <a href="#" class="new-page">Read <span>More</span></a>
+      
+                </div>
+      
+              </div>
+      
+            </div>
+            
+            <div class="card-image">
+              <img src="./hp.jpg" alt="">
+              <div class="card-details">
+                <h2>Alpine Wonderland<span> Himachal Pradesh</span></h2>
+                <p>Himachal Pradesh, nestled in the majestic Himalayas, enchants with its snow-capped peaks, picturesque valleys</p>
+                <div class="card-more">
+                  <a href="#" class="new-page">Read <span>More</span></a>
+      
+                </div>
+      
+              </div>
+      
+            </div>
+            
+        </div>
+        <div class="card-row">
+          <div class="card-image">
+            <img src="./up.jpg" alt="">
+            <div class="card-details">
+              <h2>Cultural Tapestry<span> Uttar Pradesh</span></h2>
+              <p>the largest state in India, is a treasure trove , with iconic sites like the Taj Mahal in Agra</p>
+              <div class="card-more">
+                <a href="#" class="new-page">Read <span>More</span></a>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+          
+          <div class="card-image">
+            <img src="./mp.jpg" alt="">
+            <div class="card-details">
+              <h2>Heartland Heritage<span> Madhya Pradesh</span></h2>
+              <p>Aptly called the "heart of India," is a state brimming with historical treasures and architectural wonders</p>
+              <div class="card-more">
+                <a href="#" class="new-page">Read <span>More</span></a>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+</body>
+</html>
